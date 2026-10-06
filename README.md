@@ -1,3 +1,4 @@
+
 # Active Directory Domain Services Lab
 
 ## Project Overview
@@ -51,8 +52,7 @@ My existing DNS zone was:
 davidlab.local
 ```
 
-### Screenshot
-<!-- Drag your DNS Manager screenshot here -->
+<img width="1470" height="956" alt="Screenshot 2026-10-06 at 6 32 11 PM" src="https://github.com/user-attachments/assets/73d0ea0f-5973-4cce-8e38-f9669b4a6ba5" />
 
 ---
 
@@ -67,9 +67,8 @@ Server Manager
 → Active Directory Domain Services
 → Install
 ```
+<img width="1470" height="956" alt="Screenshot 2026-10-06 at 6 33 49 PM" src="https://github.com/user-attachments/assets/03f8d624-e430-40fa-b479-a94f34f2f012" />
 
-### Screenshot
-<!-- Drag your AD DS installation screenshot here -->
 
 ---
 
@@ -78,13 +77,13 @@ Server Manager
 After installing AD DS, I promoted the Windows Server to a **Domain Controller** and configured a new Active Directory forest.
 
 ```text
-Domain: davidlab.local
+Domain: my domain.com
+
 ```
 
 After the server restarted, I verified the domain using **Active Directory Users and Computers**.
 
-### Screenshot
-<!-- Drag your Active Directory domain screenshot here -->
+<img width="1470" height="956" alt="Screenshot 2026-10-06 at 6 37 25 PM" src="https://github.com/user-attachments/assets/4798c8cd-074d-4d6d-99cd-6b18269622d1" />
 
 ---
 
@@ -100,8 +99,7 @@ davidlab.local
 └── Employees
 ```
 
-### Screenshot
-<!-- Drag your OU screenshot here -->
+<img width="1470" height="956" alt="Screenshot 2026-10-06 at 6 42 11 PM" src="https://github.com/user-attachments/assets/cb43eb7c-cf7f-4cd2-83b0-ce2c4eb93b5d" />
 
 ---
 
@@ -120,8 +118,9 @@ Employees
 └── Michael Davis (mdavis)
 ```
 
-### Screenshot
-<!-- Drag your user accounts screenshot here -->
+<img width="1470" height="956" alt="Screenshot 2026-10-06 at 6 48 27 PM" src="https://github.com/user-attachments/assets/c51fc29f-b693-40f2-87ff-8ad4afa6e792" />
+<img width="1470" height="956" alt="Screenshot 2026-10-06 at 6 49 15 PM" src="https://github.com/user-attachments/assets/aa7680d8-8e9d-473b-a8bd-a2c26357a5c7" />
+<img width="1470" height="956" alt="Screenshot 2026-10-06 at 6 48 56 PM" src="https://github.com/user-attachments/assets/1499a911-fef7-47f4-8da5-58a8361aab5f" />
 
 ---
 
@@ -137,8 +136,7 @@ I then added `jsmith` as a member of the group.
 
 This demonstrated basic Active Directory group and user management.
 
-### Screenshot
-<!-- Drag your IT Support group screenshot here -->
+<img width="1470" height="956" alt="Screenshot 2026-10-06 at 6 52 41 PM" src="https://github.com/user-attachments/assets/e1c1ebfe-b1df-4ba7-a825-b7399d8a9ba2" />
 
 ---
 
@@ -148,14 +146,12 @@ I configured my Windows 10 Enterprise VM to use the Domain Controller as its DNS
 
 I then joined the computer to:
 
-```text
-davidlab.local
-```
+```text my domain.com```
 
 The Windows 10 computer successfully connected to the Active Directory domain.
 
-### Screenshot
-<!-- Drag your "Welcome to the davidlab.local domain" screenshot here -->
+<img width="1470" height="956" alt="Screenshot 2026-10-06 at 7 01 49 PM" src="https://github.com/user-attachments/assets/53677def-f688-4454-861c-2b6cb898df54" />
+
 
 ---
 
@@ -164,7 +160,8 @@ The Windows 10 computer successfully connected to the Active Directory domain.
 After restarting the Windows 10 VM, I logged in using the domain account:
 
 ```text
-DAVIDLAB\jsmith
+mydomain.com\Jane_admin
+
 ```
 
 I verified the logged-in user with:
@@ -179,8 +176,7 @@ I also verified which Domain Controller authenticated the user:
 echo %logonserver%
 ```
 
-### Screenshot
-<!-- Drag your whoami/logonserver screenshot here -->
+<img width="1470" height="956" alt="Screenshot 2026-10-06 at 7 06 00 PM" src="https://github.com/user-attachments/assets/d8a446dd-5d67-42b5-8448-105678375620" />
 
 ---
 
@@ -195,8 +191,7 @@ Using **Active Directory Users and Computers**, I practiced common account-manag
 
 These are common tasks performed by IT support and system administrators.
 
-### Screenshot
-<!-- Drag your account management screenshot here -->
+<img width="1470" height="956" alt="Screenshot 2026-10-06 at 7 11 32 PM" src="https://github.com/user-attachments/assets/5fe19c1b-fed1-4320-a7ff-7942d73ffa77" />
 
 ---
 
@@ -225,9 +220,3 @@ I learned how Active Directory, DNS, Domain Controllers, users, groups, and Wind
 
 ---
 
-## Author
-
-**David Saint Louis**  
-Cybersecurity / Information Technology Student
-
-[LinkedIn](https://www.linkedin.com/in/david-saint-louis-)
